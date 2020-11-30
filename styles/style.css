@@ -1,3 +1,17 @@
+/* div,
+header, nav, main, footer,
+section, article,
+img,
+ul, li, ol,
+h1, h2, h3, h4, h5, h6,
+cite, blockquote,
+figure,
+span,
+a,
+p {
+  border: 1px solid red;
+} */
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,23 +23,396 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+/* - Служебные блоки - */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.link-cover {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.quote-container {
+  display: flex; /* Убираем пробелы между автором цитаты и годом */
+}
+
+.quote {
+  margin: 0;
+  font-style: normal;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.centered-block { /* Должен быть внизу */
+  margin: 0 auto;
+}
+
+
+/* - /Служебные блоки - */
+
+
+/* - Общие блоки - */
+
+.logo {
+  display: flex; /* Чтобы растянуть ссылку */
+}
+
+.logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 64px;
+
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+  background-size: cover;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.section-title_theme_dark {
+  z-index: 2;
+  padding: 90px 0 0;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.section-subtitle_theme_dark {
+  z-index: 2;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.table_theme_dark {
+  z-index: 2;
+  padding: 0 0 90px;
+}
+
+.table__cell {
+  width: 250px;
+  margin: 60px 0 0;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin: 80px 0 0;
+}
+
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.table__heading_theme_dark {
+
+}
+
+.table__text {
+   margin: 20px 0 0 0; /*  */
+   line-height: 1.2;
+   font-size: 18px;
+}
+
+.table__text_theme_dark {
+
+}
+
+.table__text_type_quote {
+  font-style: normal;
+}
+
+/* - /Общие блоки - */
+
+
+/* - Header - */
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  z-index: 2;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 800;
+  width: 730px;
+  margin: 0 0 0 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  z-index: 2;
+  left: 64px;
+  bottom: 30px;
+  font-weight: 400;
+  width: 388px;
+  line-height: 25px;
+}
+
+.header__link {
+  position: relative;
+  z-index: 2;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+/* - /Header - */
+
+
+/* - Main - */
+
+.content {
 }
+
+.description {
+  min-height: 300px;
+  padding-top: 100px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+  margin: 0;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin: 0;
+}
+
+
+.two-columns__span-accent {
+  font-weight: 800;
+}
+
+.digits {
+  padding: 100px 0;
+}
+
+.feynman {
+  background-color: #f2f2f2;
+  height: 790px;
+  display: flex;
+  position: relative; /* */
+  flex-direction: column;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  width: 648px;
+  text-align: center;
+  margin: 100px auto 70px;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.kaufman {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  color: #fff;
+  min-height: 600px;
+  z-index: 0;
+}
+
+.kaufman__triangle{
+  position: absolute;
+  right: -210px;
+  z-index: 1;
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-position: top left;
+  background-size: cover;
+}
+
+/* -- Footer -- */
+
+.footer {
+  padding: 60px 0 40px;
+}
+
+.footer_theme_dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer__column {
+  min-height: 250px;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+  line-height: 25px;
+}
+
+.footer__column_content_info {
+  line-height: 30px;
+}
+
+.footer__column_content_social {
+  line-height: 30px;
+}
+
+.footer__author {
+  margin: 18px 0;
+}
+
+.footer__column-heading {
+  font-weight: 800;
+  margin: 0;
+ }
+
+.footer__column-links {
+  padding: 20px 0 16px;
+}
+
+.footer__column-link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.footer__social-icon_site_facebook {
+  background-image: url(../images/facebook_color_white.svg);
+}
+
+.footer__social-icon_site_vkontakte {
+  background-image: url(../images/vk_color_white.svg);
+}
+
+.footer__social-icon_site_instagram {
+  background-image: url(../images/instagram_color_white.svg);
+}
+
+/* -- /Footer -- */

@@ -98,7 +98,6 @@ p {
 
 .section-title_theme_dark {
   z-index: 2;
-  padding: 90px 0 0;
 }
 
 .section-subtitle {
@@ -123,7 +122,6 @@ p {
 
 .table_theme_dark {
   z-index: 2;
-  padding: 0 0 90px;
 }
 
 .table__cell {
@@ -280,7 +278,7 @@ p {
 
 .feynman {
   background-color: #f2f2f2;
-  height: 790px;
+  min-height: 790px;
   display: flex;
   position: relative; /* */
   flex-direction: column;
@@ -326,11 +324,13 @@ p {
   color: #fff;
   min-height: 600px;
   z-index: 0;
+  padding: 90px 0;
 }
 
 .kaufman__triangle{
   position: absolute;
   right: -210px;
+  top: 0;
   z-index: 1;
   width: 877px;
   height: 877px;

@@ -268,8 +268,7 @@ p {
   display: flex;
   position: relative; /* */
   flex-direction: column;
-  padding-top: 100px
-  ;
+  padding-top: 100px;
 }
 
 .feynman__image {

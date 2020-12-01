@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-1/images/favicon-1.png">
   <title>Научиться учиться</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Что с этим делать? Узнать → ">
   <meta name="keywords" content="метод фейнмана, принципы обучения, научиться учиться">
   <meta name="author" content="Владимир Михайлов">
 
@@ -15,23 +15,21 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="logo logo_place_header">
-        <a class="link-cover" target="_blank" href="https://praktikum.yandex.ru"></a>
-      </div>
+      <a class="logo logo_place_header" target="_blank" href="https://praktikum.yandex.ru"></a>
       <h1 class="header__title">Научиться учиться</h1>
-      <h2 class="header__subtitle text">
+      <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a class="header__link link" href="#description">Узнать &rarr;</a>
-      </h2>
+        <a class="header__link" href="#description">Узнать &rarr;</a>
+      </p>
         <img class="header__main-illustration" src="./images/header-image.png" alt="Картина маслом Опять двойка">
       <div class="header__square-pic"></div>
     </header>
     <main class="content">
       <section class="description" id="description" aria-label="Главные проблемы в обучении">
-        <article class="two-columns centered-block">
-          <h3 class="two-columns__brief">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">
             Главные проблемы в обучении
-          </h3>
+          </h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
               Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
@@ -50,13 +48,13 @@
       </section>
 
       <section class="digits">
-        <h3 class="section-title centered-block">
+        <h2 class="section-title">
           Цифры и факты
-        </h3>
-        <h4 class="section-subtitle centered-block">
-          Про учёбу и мозг
-        </h4>
-        <ul class="table list centered-block">
+          <span class="section-subtitle">
+            Про учёбу и мозг
+          </span>
+        </h2>
+        <ul class="table">
           <li class="table__cell">
             <h5 class="table__heading">
               86 миллиардов
@@ -153,23 +151,25 @@
         <!-- Картинку вставил через <img>,
           чтобы прописать alt для поисковиков -->
         <img class="feynman__image" src="./images/feynman.png" alt="Лауреат Нобелевской премии по физике Ричард Фейнман. Метод Фейнмана.">
-        <h3 class="feynman__title">
+        <h2 class="feynman__title">
           Метод Фейнмана
-        </h3>
-        <h4 class="feynman__subtitle centered-block">
+        </h2>
+        <p class="feynman__subtitle">
           Выучить и не забыть.
-        </h4>
-        <a class="feynman__subtitle feynman__link link" href="https://bit.ly/richard-feinman-method" target="_blank">
+        </p>
+        <a class="feynman__link" href="https://bit.ly/richard-feinman-method" target="_blank">
           Подробнее &rarr;
         </a>
       </section>
 
       <section class="kaufman">
-        <h3 class="section-title section-title_theme_dark centered-block">
+        <h2 class="section-title section-title_theme_dark">
           Принципы обучения
-        </h3>
-        <h4 class="section-subtitle section-subtitle_theme_dark centered-block">от Джоша Кауфмана</h4>
-        <ul class="table table_theme_dark list centered-block">
+          <span class="section-subtitle section-subtitle_theme_dark">
+            от Джоша Кауфмана
+          </span>
+        </h2>
+        <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h5 class="table__heading table__heading_theme_dark">
               1
@@ -255,60 +255,58 @@
         </div>
       </section>
     </main>
-    <footer class="footer footer_theme_dark">
-      <div class="footer__columns centered-block">
+    <footer class="footer">
+      <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <div class="logo logo_place_footer">
-            <a class="link-cover" target="_blank" href="https://praktikum.yandex.ru"></a>
-          </div>
-          <div class="footer__author">
-            &copy;2019. <cite class="quote text">Виктор Абанькин</cite>
-          </div>
+          <a class="logo logo_place_footer" target="_blank" href="https://praktikum.yandex.ru"></a>
+          <p class="footer__author">
+            &copy;2019. <cite class="quote">Виктор Абанькин</cite>
+          </p>
         </div>
-        <div class="footer__column footer__column_content_info">
-          <h6 class="footer__column-heading  text">
+        <nav class="footer__column footer__column_content_info">
+          <h6 class="footer__column-heading">
             О Практикуме
           </h6>
-          <ul class="footer__column-links list">
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" target="_blank" href="https://praktikum.yandex.ru">Главная</a>
+          <ul class="footer__column-links">
+            <li class="footer__list-item">
+              <a class="footer__column-link" target="_blank" href="https://praktikum.yandex.ru">Главная</a>
             </li>
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" target="_blank" href="https://praktikum.yandex.ru/#another-way-to-learn-section">Концепция</a>
+            <li class="footer__list-item">
+              <a class="footer__column-link" target="_blank" href="https://praktikum.yandex.ru/#another-way-to-learn-section">Концепция</a>
             </li>
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" href="#">Наставники</a>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href="#">Наставники</a>
             </li>
           </ul>
-        </div>
-        <div class="footer__column footer__column_content_social">
-          <h6 class="footer__column-heading text">
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+          <h6 class="footer__column-heading">
             Соцсети
           </h6>
-          <ul class="footer__column-links list">
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" target="_blank" href="https://www.facebook.com/yandex.praktikum/">
+          <ul class="footer__column-links">
+            <li class="footer__list-item">
+              <a class="footer__column-link" target="_blank" href="https://www.facebook.com/yandex.praktikum/">
                 <div class="footer__social-icon footer__social-icon_site_facebook">
                 </div>
                 Facebook
               </a>
             </li>
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" target="_blank" href="https://vk.com/yandex.praktikum">
+            <li class="footer__list-item">
+              <a class="footer__column-link" target="_blank" href="https://vk.com/yandex.praktikum">
                 <div class="footer__social-icon footer__social-icon_site_vkontakte">
                 </div>
                 ВКонтакте
               </a>
             </li>
-            <li class="footer__column-link">
-              <a class="footer__column-link footer_theme_dark text" target="_blank" href="https://www.instagram.com/yndx.praktikum/">
+            <li class="footer__list-item">
+              <a class="footer__column-link" target="_blank" href="https://www.instagram.com/yndx.praktikum/">
                 <div class="footer__social-icon footer__social-icon_site_instagram">
                 </div>
                 Instagram
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
   </div>

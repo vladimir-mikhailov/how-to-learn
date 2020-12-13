@@ -3,10 +3,9 @@
   align-items: center;
   text-decoration: none;
   color: #fff;
+  transition: opacity .5s;
 }
 
 .footer__column-link:hover {
-  text-decoration: underline;
   opacity: .5;
-  transition: opacity .5s;
 }

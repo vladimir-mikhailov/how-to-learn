@@ -2,12 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./blocks/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <link rel="icon" href="https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-1/images/favicon-1.png">
   <title>Научиться учиться</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Что с этим делать? Узнать → ">
-  <meta name="keywords" content="принципы обучения, научиться учиться, техники обучения">
   <meta name="author" content="Владимир Михайлов">
 
 </head>
@@ -15,11 +14,11 @@
   <div class="page">
 
     <header class="header">
-      <a class="logo logo_place_header" target="_blank" href="https://praktikum.yandex.ru"></a>
+      <a class="logo logo_place_header" target="_blank" rel="nofollow noopener noreferrer" href="https://praktikum.yandex.ru"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-        <a class="header__link" href="#description" target="_blank">Узнать &rarr;</a>
+        <a class="header__link" href="#description" target="_blank" rel="nofollow noopener noreferrer">Узнать &rarr;</a>
       </p>
         <img class="header__main-illustration" src="./images/header-image.png" alt="Картина маслом Опять двойка">
       <div class="header__square-pic rotation"></div>
@@ -117,7 +116,7 @@
         <p class="feynman__subtitle">
           Выучить и не забыть.
         </p>
-        <a class="feynman__link" href="https://bit.ly/richard-feinman-method" target="_blank">
+        <a class="feynman__link" href="https://bit.ly/richard-feinman-method" target="_blank" rel="nofollow noopener noreferrer">
           Подробнее &rarr;
         </a>
       </section>
@@ -139,8 +138,6 @@
             </p>
           </li>
           <li class="table__cell">
-            <!-- Оформил как цитату в соответствии со спецификацией: https://www.w3.org/TR/html5-author/the-blockquote-element.html#the-blockquote-element -->
-            <figure class="quote">
               <blockquote class="quote">
                 <h3 class="table__heading">
                   2.1 миллиарда
@@ -149,15 +146,14 @@
                   Число нуждающихся в повышении квалификации
                 </p>
               </blockquote>
-              <figcaption class="quote-container">
+              <div class="quote-container">
                 <cite class="table__text table__text_type_quote">
                   Всемирный Банк
                 </cite>
                 <span class="table__text">
                   , 2017
                 </span>
-              </figcaption>
-            </figure>
+              </div>
           </li>
           <li class="table__cell">
             <h3 class="table__heading">
@@ -176,7 +172,6 @@
             </p>
           </li>
           <li class="table__cell">
-            <figure class="quote">
               <blockquote class="quote">
                 <h3 class="table__heading">
                   420 миллионов
@@ -185,15 +180,14 @@
                   Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
                 </p>
               </blockquote>
-              <figcaption class="quote-container">
+              <div class="quote-container">
                 <cite class="table__text table__text_type_quote">
                   Всемирный Банк
                 </cite>
                 <span class="table__text">
                   , 2017
                 </span>
-              </figcaption>
-            </figure>
+              </div>
           </li>
           <li class="table__cell">
             <h3 class="table__heading">
@@ -233,7 +227,7 @@
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img src="./images/khan-book.jpg" alt="Книга Весь мир — школа, Салман Хан" class="khan__book-pic">
-            <a href="https://www.labirint.ru/books/483575/" target="_blank" class="khan__buy-link">
+            <a href="https://www.labirint.ru/books/483575/" target="_blank" rel="nofollow noopener noreferrer" class="khan__buy-link">
               Купить книгу&nbsp;&rarr;
             </a>
           </div>
@@ -336,12 +330,20 @@
       <aside class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a class="resources__logo resources__logo_site_arzamas" target="_blank" href="https://arzamas.academy" title="Перейти на сайт Arzamas"></a>
-          <a class="resources__logo resources__logo_site_nplus1" target="_blank" href="https://nplus1.ru" title="Перейти на сайт N+1"></a>
-          <a class="resources__logo resources__logo_site_strelka" target="_blank" href="https://strelka.com/" title="Перейти на сайт STRELKA"></a>
-          <a class="resources__logo resources__logo_site_polka" target="_blank" href="https://polka.academy" title="Перейти на сайт ПОЛКА"></a>
-        </div>
+        <ul class="resources__logo-zone">
+          <li class="resources__logo">
+            <a class="resources__logo resources__logo_site_arzamas" target="_blank" rel="nofollow noopener noreferrer" href="https://arzamas.academy" title="Перейти на сайт Arzamas"></a>
+          </li>
+          <li class="resources__logo">
+            <a class="resources__logo resources__logo_site_nplus1" target="_blank" rel="nofollow noopener noreferrer" href="https://nplus1.ru" title="Перейти на сайт N+1"></a>
+          </li>
+          <li class="resources__logo">
+            <a class="resources__logo resources__logo_site_strelka" target="_blank" rel="nofollow noopener noreferrer" href="https://strelka.com/" title="Перейти на сайт STRELKA"></a>
+          </li>
+          <li class="resources__logo">
+            <a class="resources__logo resources__logo_site_polka" target="_blank" rel="nofollow noopener noreferrer" href="https://polka.academy" title="Перейти на сайт ПОЛКА"></a>
+          </li>
+        </ul>
       </aside>
 
     </main>
@@ -349,7 +351,7 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <a class="logo logo_place_footer" target="_blank" href="https://praktikum.yandex.ru"></a>
+          <a class="logo logo_place_footer" target="_blank" rel="nofollow noopener noreferrer" href="https://praktikum.yandex.ru"></a>
           <p class="footer__author">
             &copy;2019. <cite class="quote">Виктор Абанькин</cite>
           </p>
@@ -360,13 +362,13 @@
           </h3>
           <ul class="footer__column-links">
             <li class="footer__list-item">
-              <a class="footer__column-link" target="_blank" href="https://praktikum.yandex.ru">Главная</a>
+              <a class="footer__column-link" target="_blank" rel="nofollow noopener noreferrer" href="https://praktikum.yandex.ru">Главная</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__column-link" target="_blank" href="https://praktikum.yandex.ru/#another-way-to-learn-section">Концепция</a>
+              <a class="footer__column-link" target="_blank" rel="nofollow noopener noreferrer" href="https://praktikum.yandex.ru/#another-way-to-learn-section">Концепция</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__column-link" href="#" target="_blank">Наставники</a>
+              <a class="footer__column-link" href="#" target="_blank" rel="nofollow noopener noreferrer">Наставники</a>
             </li>
           </ul>
         </nav>
@@ -376,21 +378,21 @@
           </h3>
           <ul class="footer__column-links">
             <li class="footer__list-item">
-              <a class="footer__column-link" target="_blank" href="https://www.facebook.com/yandex.praktikum/">
+              <a class="footer__column-link" target="_blank" rel="nofollow noopener noreferrer" href="https://www.facebook.com/yandex.praktikum/">
                 <div class="footer__social-icon footer__social-icon_site_facebook">
                 </div>
                 Facebook
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__column-link" target="_blank" href="https://vk.com/yandex.praktikum">
+              <a class="footer__column-link" target="_blank" rel="nofollow noopener noreferrer" href="https://vk.com/yandex.praktikum">
                 <div class="footer__social-icon footer__social-icon_site_vkontakte">
                 </div>
                 ВКонтакте
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__column-link" target="_blank" href="https://www.instagram.com/yndx.praktikum/">
+              <a class="footer__column-link" target="_blank" rel="nofollow noopener noreferrer" href="https://www.instagram.com/yndx.praktikum/">
                 <div class="footer__social-icon footer__social-icon_site_instagram">
                 </div>
                 Instagram

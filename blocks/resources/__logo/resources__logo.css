@@ -4,9 +4,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  text-align: center;
+  display: flex;
+  transition: opacity .5s;
 }
 
 .resources__logo:hover {
   opacity: .5;
-  transition: opacity .5s;
 }

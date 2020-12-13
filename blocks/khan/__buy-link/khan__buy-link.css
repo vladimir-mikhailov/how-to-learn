@@ -7,11 +7,9 @@
   padding: 0;
   margin: 0;
   height: 42px;
+  transition: opacity .5s;
 }
 
 .khan__buy-link:hover {
-  outline: dotted #2f80ed;
-  background: rgb(107, 43, 14);
   opacity: .5;
-  transition: opacity .5s;
 }

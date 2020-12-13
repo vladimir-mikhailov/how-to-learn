@@ -1,0 +1,12 @@
+.header__link {
+  position: relative;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  outline: dotted #2f80ed;
+  background: gold;
+  opacity: .5;
+  transition: opacity .5s;
+}

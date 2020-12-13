@@ -1,0 +1,26 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Подсвечиваем блоки и элементы для разработки */
+
+/* div,
+header, nav, main, footer,
+section, article,
+img,
+ul, li, ol,
+h1, h2, h3, h4, h5, h6,
+cite, blockquote,
+figure,
+span,
+a,
+p {
+  border: 1px solid red;
+} */

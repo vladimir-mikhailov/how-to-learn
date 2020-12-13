@@ -1,0 +1,10 @@
+.footer__column-link_site_vkontakte::before {
+  content: '';
+  background-image: url(../../../../images/vk_color_white.svg);
+  height: 16px;
+  width: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  display: flex;
+}

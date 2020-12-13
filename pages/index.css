@@ -235,13 +235,13 @@
 
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 
-@import url(../blocks/footer/__social-icon/footer__social-icon.css);
+@import url(../blocks/footer/__column-link/_site/footer__column-link_site_facebook.css);
 
-@import url(../blocks/footer/__social-icon/_site/footer__social-icon_site_facebook.css);
+@import url(../blocks/footer/__column-link/_site/footer__column-link_site_instagram.css);
 
-@import url(../blocks/footer/__social-icon/_site/footer__social-icon_site_vkontakte.css);
+@import url(../blocks/footer/__column-link/_site/footer__column-link_site_vkontakte.css);
 
-@import url(../blocks/footer/__social-icon/_site/footer__social-icon_site_instagram.css);
+
 
 
 /* -- /Sections -- */
